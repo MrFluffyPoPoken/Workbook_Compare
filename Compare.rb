@@ -24,6 +24,7 @@ def compareRow row1, row2
 	end
 end
 
+#Changed so that sheet 2 is a clone of the original, and is a new object instead of a reference. 
 book1.worksheets.each_with_index do |sheet1, i|
 	s2 = book2.worksheet i
 	sheet2 = s2.clone
